@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder App</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <form method="POST" role="form">
+                        <div class="card-header">
+                            <h4><strong>Who Are You!</strong></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="photo">Link of Your Photo</label>
+                                <input type="text" class="form-control" id="photo" required>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <h4><strong>Survey!</strong></h4> <span>From (1 "Strongly Disagree") to (5 "Strongly Agree")</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <h5>Question 1</h5>
+                                <label for="q1">You rarely get carried away by fantasies and ideas.</label>
+                                <select class="form-control" required id="q1">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 2</h5>
+                                <label for="q2">Your mind is always buzzing with unexplored ideas and plans.</label>
+                                <select class="form-control" required id="q2">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 3</h5>
+                                <label for="q3">Generally speaking, you rely more on your experience than your imagination.</label>
+                                <select class="form-control" required id="q3">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 4</h5>
+                                <label for="q4">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                                <select class="form-control" required id="q4">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 5</h5>
+                                <label for="q5">You rarely do something just out of sheer curiosity.</label>
+                                <select class="form-control" required id="q5">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 6</h5>
+                                <label for="q6">People can rarely upset you.</label>
+                                <select class="form-control" required id="q6">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 7</h5>
+                                <label for="q7">It is often difficult for you to relate to other people’s feelings.</label>
+                                <select class="form-control" required id="q7">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 8</h5>
+                                <label for="q8">In a discussion, truth should be more important than people’s sensitivities.</label>
+                                <select class="form-control" required id="q8">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 9</h5>
+                                <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                                <select class="form-control" required id="q9">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Question 10</h5>
+                                <label for="q10">You feel more energetic after spending time with a group of people.</label>
+                                <select class="form-control" required id="q10" >
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="text-left">
+                                <button type="submit" class="btn btn-primary btn-md mr-5" id="add-btn">Submit</button><span id="err"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+          </div>
+      </div>
+    
+  </div>
+
+  <!-- Large modal -->
+  <div class="modal fade info-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Your Friend Would be:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <h4 class="text-center" id="friendName"></h4>
+                <hr/>
+                <img id="friendPhoto" alt="Photo">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+  </div>
+
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      $("#err").empty();
+      event.preventDefault();
+      if( $("#name").val().length < 2 || $("#photo").val().split("http")[0].length > 0){
+        $("#err").html("Please Enter Valid Input!");
+        return 0;
+      }
+      for(var i=1; i<11; i++){
+        if( $("#q"+i).val().length > 1){
+          $("#err").html("Please Choose Valid Input!");
+          
+          return 0;
+        }
+      }
+
+      var newfriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [
+          parseInt( $("#q1").val() ),
+          parseInt( $("#q2").val() ),
+          parseInt( $("#q3").val() ),
+          parseInt( $("#q4").val() ),
+          parseInt( $("#q5").val() ),
+          parseInt( $("#q6").val() ),
+          parseInt( $("#q7").val() ),
+          parseInt( $("#q8").val() ),
+          parseInt( $("#q9").val() ),
+          parseInt( $("#q10").val() ),
+        ]
+      };
+      console.log(newfriend);
+      // Question: What does this code do??
+      $.post("/api/friends", newfriend)
+        .then(function(data) {
+            $('.info-modal').modal("show", true);
+            setTimeout(function(){
+                $('#friendName').text( data.name);
+                $('#friendPhoto').attr("src", data.photo);
+                $('#friendPhoto').attr("width", $('#friendName').width() + 'px');
+            }, 250);
+        });
+    });
+  </script>
+
+</body>
+</html>
