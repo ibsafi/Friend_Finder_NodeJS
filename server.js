@@ -16,7 +16,7 @@ app.use(express.json());
 require( path.join(__dirname, "app/routing/apiRoutes.js") )(app, apiFriends);
 require( path.join(__dirname, "app/routing/htmlRoutes.js") )(app);
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // Starts the server to begin listening
 // =============================================================
