@@ -1,6 +1,6 @@
 # Friend Finder using NodeJS and Express 
 
-## Overview
+## Overview:
 This application is a Friend finder questionnaire using NodeJS, Express, and local JSON file for saving friends information.
 
 ## Project Dependencies:
