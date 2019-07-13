@@ -10,6 +10,7 @@ This app requires this node package: `Express`.
 The app runs by navigating into the directory of the app folder, and then type the command  `node server.js` in the command line terminal.
 
 * To access the app, open the web-browser and navigate to: "localhost:3000", then the following parts will be seen in the page:
+
   * At the landing page the app is informing that there are few basic questions to find the best matching friend based on the user's answers, and "Go to Survey" button to begun the survey.
 
   ![a Screenshot of landing page](./images/landing.PNG)
